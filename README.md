@@ -1,3 +1,3 @@
-"# Coin-Caex" 
-"# Examen Practico"
-"# Mynor López"
+# Coin-Caex
+# Examen Practico
+# Mynor López
