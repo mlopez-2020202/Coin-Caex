@@ -1,0 +1,36 @@
+<head ng-controller="miCtrl">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="container-form sing-in">
+        <form class="formulario" (ngSubmit)="login()" #loginForm="ngForm">
+            <h2 class="create-account">Iniciar Sesión</h2>
+            <div class="iconos">
+                <div class="border-icons">
+                    <i class='bx bxl-google'></i>
+                </div>
+                <div class="border-icons">
+                    <i class='bx bxl-github' ></i>
+                </div>
+                <div class="border-icons">
+                    <i class='bx bxl-facebook-circle' ></i>
+                </div>
+            </div>
+            <p class="cuenta-gratis">Accede a todos nuestros servicios</p>
+            <input [(ngModel)]="user.correo" name="correo" type="email" placeholder="Correo electrónico">
+            <input [(ngModel)]="user.contrasena" name="contrasena" type="password" placeholder="Contraseña">
+            <button type="submit" >Iniciar Sesión</button>
+        </form>
+        
+        <div class="welcome-back">
+            <div class="message">
+                <h2>Bienvenido a CoinCaex</h2>
+                <p>¿Aun no tienes una cuenta? <br>Registrate</p>
+                <button class="sign-in-btn" routerLink="/register">Registrarse</button>
+    
+            </div>
+        </div>
+        
+    </div>    
+
+</body>
